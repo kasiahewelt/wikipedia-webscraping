@@ -1,2 +1,3 @@
 pandas
 wikipedia
+bs4
