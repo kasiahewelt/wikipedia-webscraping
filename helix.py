@@ -2,15 +2,12 @@ import pandas as pd
 import wikipedia
 from wikipedia import PageError
 
-df = pd.read_csv("helix_no_description.csv")
-
-print(df.T)
-companies_list = df['self_firmo_name___'].values.tolist()
-val = [wikipedia.summary("%s" % company, auto_suggest=False, redirect=True) for company in companies_list]
-
 
 def form_df():
+    df = pd.read_csv("helix_no_description.csv")
+    companies_list = df['self_firmo_name___'].values.tolist()
     try:
+        val = [wikipedia.summary("%s" % company) for company in companies_list]
         dicts = {}
         for k, v in zip(companies_list, val):
             dicts[k] = v
