@@ -10,9 +10,9 @@
 
 Kasia to reach out to DataQuality team, asking to get a list of aprox 1000 company names without description (krishankumar.choudhary@bain.com) 
 
--Ask for a fair distribution of company sizes for which we don’t have description 
+- Ask for a fair distribution of company sizes for which we don’t have description 
 
--Ask to get these names together with their industry and rev bands 
+- Ask to get these names together with their industry and rev bands 
 
 3. Company name cleaning (https://pypi.org/project/cleanco/) 
 
